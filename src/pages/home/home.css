@@ -15,6 +15,9 @@
     place-content: center;
 
 }
+.home-left p{
+letter-spacing: 1px;
+}
 
 .home-left h4 {
     text-transform: capitalize;

@@ -6,7 +6,7 @@ import { TbBrandJavascript } from "react-icons/tb"
 import { BiLogoReact } from "react-icons/bi"
 import { BiLogoRedux } from "react-icons/bi"
 import pic from "./assets/pic.jpg"
-
+import resume from "./assets/resume.pdf"
 
 export default function Home() {
 
@@ -19,7 +19,8 @@ export default function Home() {
           <h2>Hi, i'm    <span>  Abdul</span></h2>
           <h4>frontend developer</h4>
           <p>
-            A frontend developer is a professional who focuses on creating the visual and interactive elements of a website or web application. They use languages like HTML, CSS, and JavaScript to build user interfaces that are visually appealing and functional. Their responsibilities include implementing designs, ensuring compatibility across different browsers and devices, optimizing performance, and collaborating with other team members. Frontend developers stay updated with the latest tools and technologies to deliver excellent user experiences on the web.</p>
+            I'm frontend developer.and i'm fresher, i passed out 2022 september.I was learned myself frontend development like  html,css,JavaScript,and reactJs redux toolkite,i can develop web application or any interactive webpage with responsive design... 
+          </p> 
           <div className="skills">
             <h3>skills</h3>
             <div className="icons">
@@ -30,7 +31,7 @@ export default function Home() {
               <BiLogoRedux className="icon" />
             </div>
           </div>
-          <a href={pic} download>dowenlod CV</a>
+          <a href={resume} download >dowenlod CV</a>
         </div>
       </div>
 
