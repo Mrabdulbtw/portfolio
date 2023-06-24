@@ -6,7 +6,7 @@ import Project from './pages/project/project'
 import Education from './pages/education/education'
 function App() {
   return (
-    <Router>
+    <Router basename='/portfolio'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
