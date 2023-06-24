@@ -1,0 +1,55 @@
+.education-box {
+    background-color: rgba(36, 67, 67, 0.603);
+    width: 85vw;
+    max-width: 500px;
+    font-size: 15px;
+    display: flex;
+    height: 170px;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: default;
+    transition: 100ms background-color linear;
+}
+
+.education-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: #000;
+    background-color: #fff;
+}
+
+.education-box:hover .uc-box {
+    color: #000;
+}
+
+.uc-box {
+
+    margin-right: 10px;
+    flex: 0.4;
+    display: grid;
+    place-content: center;
+    position: relative;
+    color: #ffffffe1;
+
+}
+
+.us-details {
+    flex: 0.6;
+    color: rgb(81, 146, 150);
+}
+ .us-details strong{
+  color: aqua;
+ }
+
+.education .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.name-clg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+
+}

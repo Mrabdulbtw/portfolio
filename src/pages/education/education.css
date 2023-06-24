@@ -1,0 +1,31 @@
+.education {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(9 9 14 / 94%);
+}
+
+
+.education h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    overflow: hidden;
+    color: rgb(6, 226, 226);
+    font-weight: 400;
+    
+}
+.education-container{
+    margin-top: 50px;
+    display: grid;
+    gap: 10px;
+    overflow-y: overlay;
+    height: 100vh;
+    margin-bottom: 10px;
+
+}
+.education-container::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,138 @@
+.home {
+   height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: rgb(9 9 14 / 94%);
+}
+
+
+.home-left {
+    flex: 0.5;
+    font-size: 14px;
+    color: #d0caca;
+    padding: 25px;
+    display: grid;
+    place-content: center;
+
+}
+
+.home-left h4 {
+    text-transform: capitalize;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+
+.home-left .details {
+    margin-left: 30px;
+}
+
+.home-left h2 span {
+    color: aqua;
+    letter-spacing: 1px;
+    margin-left: 5px;
+
+}
+
+.home-left .skills {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+
+
+}
+
+.home-left .skills h3 {
+    font-weight: 500;
+    color: #d0cacab6;
+}
+
+.home-left .icons {
+    margin-left: 30px;
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+
+}
+
+.home-left p {
+    color: #748991;
+}
+
+.home-left .icons .icon {
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 50px;
+    font-size: 35px;
+    color: black;
+    transition: 300ms background-color linear;
+}
+
+.home-left .icons .icon:hover {
+    background-color: black;
+    color: aqua;
+    cursor: pointer;
+
+}
+
+.home-left a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: #000;
+    color: aqua;
+    border-radius: 5px;
+    display: block;
+    margin-top: 15px;
+    width: 110px;
+}
+
+.home-left a:hover {
+    background-color: aqua;
+    color: #000;
+}
+
+
+
+.home-right {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-right img {
+    height: 50vw;
+    max-height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-color: aqua hsl(300, 100%, 51%);
+    -webkit-box-shadow: -3px 1px 201px -20px rgba(150, 42, 189, 1);
+    -moz-box-shadow: -3px 1px 201px -20px rgba(150, 42, 189, 1);
+    box-shadow: -3px 1px 201px -20px rgba(150, 42, 189, 1);
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .home {
+        flex-direction: column;
+      
+    }
+
+    .home-right img {
+        align-items: flex-start;
+        
+    }
+
+}
