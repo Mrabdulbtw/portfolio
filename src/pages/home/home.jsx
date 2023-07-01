@@ -19,7 +19,7 @@ export default function Home() {
           <h2>Hi, i'm    <span>  Abdul</span></h2>
           <h4>frontend developer</h4>
           <p>
-            I'm frontend developer.and i'm frisher,i passed out 2022 september.I was learned myself frontend development like  html,css,JavaScript,and reactJs redux toolkite,i can develop web application or any interactive webpage with responsive design... 
+            I'm frontend developer.and i'm fresher,i passed out 2022 september.I was learned myself frontend development like  html,css,JavaScript,and reactJs redux toolkit,i can develop web application or any interactive webpage with responsive design... 
           </p> 
           <div className="skills">
             <h3>skills</h3>
