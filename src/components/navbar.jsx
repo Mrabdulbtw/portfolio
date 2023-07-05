@@ -8,7 +8,7 @@ export default function Navabar() {
 
     return (
         <div className='navbar'>
-            <strong>portfolio</strong>
+            <strong>prtfolio</strong>
           <div className="link">
           <Link className={count === 1 ? 'change' : ''} onClick={() => setCount(1)} to='/' >Home</Link>
             <Link className={count === 2 ? 'change' : ''} onClick={() => setCount(2)} to='/project' >Projects</Link>
