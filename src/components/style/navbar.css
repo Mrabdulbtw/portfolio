@@ -11,6 +11,7 @@
 .navbar strong{
     color: #eae4e4;
     font-weight: 500;
+    animation: slidTop 1s linear forwards;
 }
 
 .navbar a {
@@ -20,6 +21,9 @@
     font-weight: 600;
     margin-right: 20px;
 }
+.navbar .link{
+    animation: slidTop 1s linear forwards;
+}
 
 .navbar a.change {
     color: #918e8e;
@@ -27,4 +31,14 @@
 
 .navbar a:hover {
     color: #918e8e;
+}
+@keyframes slidTop {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
