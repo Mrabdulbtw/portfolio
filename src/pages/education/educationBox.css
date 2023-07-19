@@ -9,6 +9,7 @@
     padding: 10px;
     cursor: default;
     transition: 100ms background-color linear;
+    margin-top: 1rem;
 }
 
 .education-box:hover {

@@ -1,44 +1,143 @@
 .navbar {
     width: 100%;
-    height: 35px;
-    background-color:#0d2126;
-    box-shadow: rgb(2, 187, 243) 1.95px 1.95px 2.6px;
+    height: 45px;
+    background-color: #0d2126;
+    /* box-shadow: rgb(2, 187, 243) 1.95px 1.95px 2.6px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
 }
-.navbar strong{
+
+
+
+.navbar strong {
     color: #eae4e4;
     font-weight: 500;
     animation: slidTop 1s linear forwards;
+    text-transform: capitalize;
+}
+
+.navbar .open {
+    display: none;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #e0d6d6;
+    color: #ffffff;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 300;
     margin-right: 20px;
+    transition: color 200ms linear;
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+    margin: 0 1rem;
+
 }
-.navbar .link{
+
+
+
+.navbar .open {
+    color: aqua;
+    cursor: pointer;
+}
+
+.navbar .links {
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+
+
+.navbar .link {
     animation: slidTop 1s linear forwards;
 }
+
 
 .navbar a.change {
     color: #918e8e;
 }
 
+
 .navbar a:hover {
     color: #918e8e;
 }
+
+
+.link .close {
+    display: none;
+}
+
+
+
+/* animation */
 @keyframes slidTop {
-    0%{
+    0% {
         transform: translateY(-100%);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar .open {
+        display: block;
+    }
+
+
+    .link {
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 280px;
+        color: #eae4e4;
+        right: -100%;
+        transition: right 0.5s linear;
+
+    }
+
+
+
+
+    .link .close {
+        display: block;
+        cursor: pointer;
+    }
+
+    .link#open {
+        right: 0;
+    }
+
+
+    .link .close {
+        margin: 0.5rem 0.5rem;
+        font-size: 19px;
+    }
+
+     .navbar .links a{
+        column-gap: 0.7rem;
+        
+     }
+
+    .navbar .links {
+        height: max-content;
+        grid-auto-flow: row;
+        justify-content: center;
+        row-gap: 1.7rem;
+        margin-top: 2rem;
+    }
+
+
 }
