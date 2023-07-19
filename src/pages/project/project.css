@@ -9,18 +9,22 @@
     background-color: rgb(9 9 14 / 94%);
     margin-top: 45px;
 }
+
+
 .project  h4{
     color: rgb(6, 226, 226);
     font-weight: 500;
     text-transform: capitalize;
     height: 40px;
-
 }
+
+
 .gif-container {
     padding: 10px;
     overflow: hidden;
     width: 120px;
 }
+
 
 .gif-box {
     height: 100px;
@@ -34,8 +38,6 @@
     animation: box infinite linear 2s;
     margin-bottom: 20px;
 }
-
-
 
 
 .gif-box .dot {
@@ -112,6 +114,7 @@
         transform: rotate(-360deg);
     }
 }
+
 
 @keyframes box {
 
